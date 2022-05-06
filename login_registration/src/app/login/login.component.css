@@ -1,0 +1,17 @@
+.t-Body-main{
+    background-image: url("/assets/images/bg_login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.child {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+  display: inline-block;
+  width: 40%;
+
+}

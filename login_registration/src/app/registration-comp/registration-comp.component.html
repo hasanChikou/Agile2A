@@ -1,0 +1,86 @@
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">PETSPLANET</a>
+    </div>
+	  <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+    <div>
+        <form  style="max-width: 600px; margin: 0 auto;"  #registrationform="ngForm" (ngSubmit)="userRegister()">
+        <div class="m-3">
+            <div class="form-group row">
+                <label class="col-4 col-form-label">E-mail: </label>
+                <div class="col-8">
+                    <input type="email"  class="form-control" required name="email" [(ngModel)]="user.email" />
+                </div>
+            </div>
+             
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Password: </label>
+                <div class="col-8">
+                    <input type="password" class="form-control"
+                            required minlength="6" maxlength="10" name="password"   [(ngModel)]="user.password"/>
+                </div>
+            </div>
+             
+            <div class="form-group row">
+                <label class="col-4 col-form-label">First Name: </label>
+                <div class="col-8">
+                    <input type="text"  class="form-control"
+                            required minlength="2" maxlength="20" name="firstName" [(ngModel)]="user.firstName" />
+                </div>
+            </div>
+             
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Last Name: </label>
+                <div class="col-8">
+                    <input type="text"  class="form-control"
+                            required minlength="2" maxlength="20" name="lastName" [(ngModel)]="user.lastName" />
+                </div>
+            </div>
+             <div class="form-group row">
+                <label class="col-4 col-form-label">Adresse: </label>
+                <div class="col-8">
+                    <input type="text" class="form-control"
+                            required minlength="2" maxlength="50" name="adresse" [(ngModel)]="user.adresse" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Num Telephone: </label>
+                <div class="col-8">
+                    <input type="text"  class="form-control"
+                            required minlength="2" maxlength="20" name="numTele" [(ngModel)]="user.numTele" />
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-4 col-form-label">Preference: </label>
+                <div class="col-8">
+    <select id="Preference" name="preference"  class="form-control" [(ngModel)]="user.preference">
+      <option value="CHIENS">CHIENS</option>
+      <option value="CHATS">CHATS</option>
+      <option value="HAMSTER">HAMSTER</option>
+	  <option value="OISEAUX">OISEAUX</option>
+	  <option value="TORTUES">TORTUES</option>
+	  <option value="POISSONS">POISSONS</option>
+	  <option value="LAPINS">LAPINS</option>
+	  <option value="POULETS">POULETS</option>
+    </select>
+                </div>
+            </div>           
+
+             
+            <div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+
+
