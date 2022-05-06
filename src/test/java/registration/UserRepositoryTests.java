@@ -23,13 +23,13 @@ public class UserRepositoryTests {
     @Test
 public void testCreateUser() {
     User user = new User();
-    user.setEmail("khalili@gmail.com");
-    user.setPassword("khalil2022");
-    user.setFirstName("SAMI");
+    user.setEmail("hasan@gmail.com");
+    user.setPassword("chikou1é");
+    user.setFirstName("hasan");
     user.setLastName("CHIKOU");
     user.setAdresse("RABAT AGDAL ENSIAS");
     user.setNumTele("0657263099");
-    user.setPreference("CHATS");
+    user.setPreference("CATS");
      
     User savedUser = repo.save(user);
      
@@ -41,7 +41,7 @@ public void testCreateUser() {
     @Test
     public void testfinduserByEmail() {
     	
-    	String email = "khalili@gmail.com" ; 
+    	String email = "hasan@gmail.com" ; 
     	User user = repo.findByEmail(email) ; 
     	assertThat(user).isNotNull(); 
     }
