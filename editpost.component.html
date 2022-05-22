@@ -1,0 +1,82 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.w3-btn {margin-bottom:10px;}
+</style>
+<body>
+<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/back.png');">
+
+    <div class='signup-container'>
+      
+      <div class="form-group">
+
+        <div class='right-container'>
+          <header>
+            <h1>Modifier   votre annonce ici  </h1>
+            <div class='set'>
+              <div class='pets-name'>
+
+                <label for='pets-name'>Name</label>
+                <input id='pets-name' placeholder="Pet's name" type='text'  [(ngModel)]="add.animal_NOM" required>
+              </div>
+             <!-- <div class='pets-photo'>
+                <input type="file" (change)="onFileSelected($event)" >
+               <button type="button" (click)="onUpload()"> Upload a photo</button>
+             
+              
+              </div>-->
+            </div>
+            <div class='set'>
+              <div class='pets-breed'>
+                <label for='pets-breed' >Breed</label>
+                <input id='pets-breed' placeholder="Pet's breed" type='text'  [(ngModel)]="add.animal_RACE" required>
+              </div>
+              <div class='pets-birthday'>
+                <label for='pets-birthday'>age</label>
+                <input id='pets-Age' placeholder='age of pet' type='number'  [(ngModel)]="add.animal_AGE" required>
+              </div>
+            </div>
+            <div class='set'>
+              <div class='pets-gender'>
+                <label for='pet-gender-female' >Gender</label>
+                <div class='radio-container'>
+                  <input checked='' id='pet-gender-female' name='pet-gender' type='radio' value='female'  [(ngModel)]="add.animal_genre" >
+                  <label for='pet-gender-female'>Female</label>
+                  <input id='pet-gender-male' name='pet-gender' type='radio' value='male'  [(ngModel)]="add.nom_groupe" >
+                  <label for='pet-gender-male'>Male</label>
+                </div>
+              </div>
+              <div class='pets-breed'>
+                <label for='pets-breed' >localisation</label>
+                <input id='pets-breed' placeholder="your localisation" type='text'  [(ngModel)]="add.vaccin" required>
+              </div>
+            
+            </div>
+            <div class="set">
+                <div class='pets-breed'>
+                    <label for='pets-breed'>email</label>
+                    <input id='pets-breed' placeholder="your email" type='text'  [(ngModel)]="add.email_annonceur" required>
+                  </div>
+                  <div class='pets-breed'>
+                    <label for='pets-breed'>phone number</label>
+                    <input id='pets-breed' placeholder="your phone number" type='number'  [(ngModel)]="add.telephone_annonceur" required>
+                  </div>
+
+            </div>
+            
+          </header>
+            <div >
+              <div style="text-align:center;">
+                <p style="text-align:center;">
+                  <button style="height:35px;width:30 ;margin-right: 10px;" class="w3-button w3-red w3-border-red w3-round-large"><b>DELETE</b></button>
+                <button style="height:35px;width:30; margin-right: 10px;margin-top: 10px; margin-bottom: 10px;" id ='next' class="w3-button w3-green w3-border w3-border-green w3-round-large" (click)="addAnnonce(add)">UPDATE</button>
+              </p></div></div>
+            
+        </div>
+        </div>
+      </div>
+      
+</div>
+
